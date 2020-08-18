@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
 
 public class LevelController {
     @FXML
@@ -144,7 +145,8 @@ public class LevelController {
         Button back = new Button("BACKTOSELECT");
         back.setTranslateX(0);
         back.setTranslateY(0);
-        back.getStylesheets().add("button.css");
+        String css = LevelController.class.getClassLoader().getResource("button.css").toExternalForm();
+        back.getStylesheets().add(css);
 
         back.setOnAction(new EventHandler<ActionEvent>() {
 

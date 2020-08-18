@@ -22,7 +22,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fl = new FXMLLoader(getClass().getClassLoader().getResource("wired-titlescreen.fxml"));
-        FXMLLoader f2 = new FXMLLoader(getClass().getClassLoader().getResource("levelselect2.fxml"));
+        FXMLLoader f2 = new FXMLLoader(getClass().getClassLoader().getResource("levelselect.fxml"));
         Pane root = fl.load();
         Pane levelSelect = f2.load();
         TitleScreenController tC = fl.getController();
