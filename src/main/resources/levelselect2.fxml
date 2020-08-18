@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ADEFD1FF; -fx-border-color: #00203FFF; -fx-font-weight: bold;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newpackage.Controller.LevelController">
+   <children>
+      <GridPane layoutX="257.0" layoutY="120.0" prefHeight="250.0" prefWidth="386.0" stylesheets="@button.css">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b1" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#changeLevel" text="1" />
+            <Button fx:id="b2" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#changeLevel" style="-fx-font-weight: bold;" text="2" GridPane.columnIndex="1" />
+            <Button fx:id="b3" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#changeLevel" text="3" GridPane.columnIndex="2" />
+            <Button fx:id="b4" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#changeLevel" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="b5" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#changeLevel" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="b6" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="b7" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="b8" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="b9" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="b10" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="10" GridPane.rowIndex="3" />
+            <Button fx:id="b11" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="11" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="b12" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="12" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="b13" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="13" GridPane.rowIndex="4" />
+            <Button fx:id="b14" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="14" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="b15" maxWidth="40.0" minWidth="40.0" mnemonicParsing="false" text="15" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="backToTitle" layoutX="396.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleBackToTitleButton" stylesheets="@button.css" text="BACK TO TITLE" />
+   </children>
+</Pane>

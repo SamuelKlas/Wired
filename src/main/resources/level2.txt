@@ -1,0 +1,10 @@
+vertex;200;20
+vertex;400;20
+vertex;200;200
+vertex;400;200
+
+wire;1;4
+wire;2;3
+wire;1;2
+wire;2;4
+wire;3;1
